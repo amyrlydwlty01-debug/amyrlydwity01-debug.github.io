@@ -2,108 +2,125 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-  <meta name="google-site-verification" content="WncBgobhd5k5XN4CpUxBRR9DfROke9INXK_bcyJenYI" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>امیرعلی دولتی | برنامه‌نویس</title>
-<meta name="description" content="سایت شخصی امیرعلی دولتی، برنامه‌نویس و توسعه‌دهنده وب">
+<meta name="description" content="سایت شخصی امیرعلی دولتی اهل ده حسن، برنامه‌نویس و توسعه‌دهنده وب">
+
+<!-- کد تأیید مالکیت گوگل -->
+<meta name="google-site-verification" content="obhd5k5XN4CpUxBRR9DFROke9INXK_bcyJenYI" />
+
+<!-- تگ‌های Open Graph برای نمایش عکس در تلگرام -->
+<meta property="og:title" content="امیرعلی دولتی | برنامه‌نویس" />
+<meta property="og:description" content="سایت شخصی امیرعلی دولتی اهل ده حسن، برنامه‌نویس و توسعه‌دهنده وب" />
+<meta property="og:image" content="https://github.com/amyrlydwity01-debug.png" />
+<meta property="og:url" content="https://amyrlydwity01-debug.github.io/amyrlydwity01-debug.github.io/" />
+<meta property="og:type" content="website" />
+
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-font-family: 'Segoe UI', Tahoma, sans-serif;
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    /* پس‌زمینه گرادیانت طلایی و نارنجی */
+    background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 .card {
-background: #fff;
-border-radius: 20px;
-padding: 40px 30px;
-max-width: 500px;
-width: 100%;
-text-align: center;
-box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(248, 181, 0, 0.4); /* سایه طلایی */
+    border-top: 8px solid #f8b500; /* نوار طلایی بالای کارت */
 }
 .avatar {
-width: 120px;
-height: 120px;
-border-radius: 50%;
-background: linear-gradient(135deg, #667eea, #764ba2);
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 50px;
-margin: 0 auto 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8b500, #e6a800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border: 4px solid #f8b500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
-h1 { font-size: 26px; margin-bottom: 8px; color: #333; }
-.job { color: #764ba2; font-size: 16px; margin-bottom: 20px; }
-.bio { color: #666; line-height: 1.8; margin-bottom: 20px; }
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
+.job { color: #e6a800; font-size: 16px; margin-bottom: 20px; font-weight: bold; }
+.bio { color: #555; line-height: 1.9; margin-bottom: 25px; font-size: 15px; text-align: justify; }
 
 .section-title {
-font-size: 18px;
-color: #333;
-margin: 20px 0 12px;
-font-weight: bold;
-border-bottom: 2px solid #667eea;
-display: inline-block;
-padding-bottom: 4px;
+    font-size: 18px;
+    color: #333;
+    margin: 25px 0 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #f8b500;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.skills {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-justify-content: center;
-margin-bottom: 15px;
+/* بخش مهارت‌ها */
+.skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
+.skill { 
+    background: #fff9e6; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    color: #d18e00; 
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid #fceabb;
 }
-.skill {
-background: #f0f0f0;
-padding: 8px 16px;
-border-radius: 20px;
-font-size: 14px;
-color: #555;
+.skill:hover { background: #f8b500; color: #fff; transform: translateY(-2px); }
+
+/* بخش مدارک */
+.certificates { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
+.cert { 
+    background: #fff9e6; 
+    padding: 15px 18px; 
+    border-radius: 12px; 
+    font-size: 15px; 
+    color: #333; 
+    text-align: right; 
+    border-right: 6px solid #f8b500; 
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.cert:hover { transform: translateX(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+.cert.learning { 
+    border-right-color: #ffa500; 
+    background: #fff3cd; /* تم نارنجی روشن برای در حال یادگیری */
 }
 
-.certificates {
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-bottom: 20px;
+/* بخش شبکه‌های اجتماعی */
+.socials { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
+.socials a { 
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+    padding: 12px 18px; 
+    border-radius: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: bold; 
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.cert {
-background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-padding: 12px 16px;
-border-radius: 10px;
-font-size: 14px;
-color: #333;
-text-align: right;
-border-right: 4px solid #764ba2;
-}
-.cert.learning {
-border-right-color: #ffa500;
-background: linear-gradient(135deg, #fff8e1, #ffe0b2);
-}
-
-.socials {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-justify-content: center;
-margin-bottom: 20px;
-}
-.socials a {
-display: flex;
-align-items: center;
-gap: 6px;
-padding: 10px 16px;
-border-radius: 10px;
-text-decoration: none;
-color: #fff;
-font-size: 13px;
-font-weight: bold;
-}
+.socials a:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
 .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 .telegram { background: #0088cc; }
 .youtube { background: #ff0000; }
@@ -111,45 +128,44 @@ font-weight: bold;
 .aparat { background: #ED145B; }
 .github { background: #333; }
 
-footer {
-margin-top: 25px;
-color: #999;
-font-size: 12px;
-}
+footer { margin-top: 30px; color: #999; font-size: 13px; border-top: 1px solid #fceabb; padding-top: 15px; }
 </style>
 </head>
 <body>
 <div class="card">
 <div class="avatar">
-<img src="https://github.com/amyrlydwity01-debug.png?v=2" alt="امیرعلی دولتی" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+<img src="https://github.com/amyrlydwity01-debug.png" alt="امیرعلی دولتی">
 </div>
 <h1>امیرعلی دولتی</h1>
 <p class="job">برنامه‌نویس و توسعه‌دهنده وب</p>
+
 <p class="bio">
-سلام! من امیرعلی دولتی هستم. عاشق برنامه‌نویسی و ساخت پروژه‌های وب هستم.
-اینجا می‌تونید درباره من، مهارت‌هام و مدارکم بیشتر بدونید.
+سلام! من امیرعلی دولتی هستم، اهل ده حسن. از همون بچگی عاشق دنیای کامپیوتر و تکنولوژی بودم و حالا با علاقه و اشتیاق، مسیر برنامه‌نویسی و ساخت وب‌سایت‌های مدرن رو دنبال می‌کنم. هدف من اینه که با یادگیری مداوم، بتونم پروژه‌های خلاقانه و کاربردی بسازم و هر روز بهتر از دیروز باشم. اینجا می‌تونید با مهارت‌ها، مدارک و مسیر پیشرفتم بیشتر آشنا بشید.
 </p>
 
-<p class="section-title">🛠️ مهارت‌ها</p>
+<p class="section-title">🛠️ مهارت‌های من</p>
 <div class="skills">
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
+<span class="skill">HTML5</span>
+<span class="skill">CSS3</span>
 <span class="skill">JavaScript</span>
 <span class="skill">Python</span>
 <span class="skill">Git</span>
+<span class="skill">GitHub</span>
 <span class="skill">Linux</span>
+<span class="skill">Termux</span>
+<span class="skill">طراحی سایت</span>
+<span class="skill">سئو (SEO)</span>
 </div>
 
-<p class="section-title">🎓 مدارک و دوره‌ها</p>
-  <div class="links" style="margin-top: 15px; display: flex; justify-content: center; gap: 10px;">
-<a href="gallery.html" style="background: #ED145B; color: #fff; padding: 10px 20px; border-radius: 10px; text-decoration: none;">🖼️ گالری عکس</a>
-<a href="calculator.html" style="background: #28a745; color: #fff; padding: 10px 20px; border-radius: 10px; text-decoration: none;">🧮 ماشین حساب</a>
-  </div>
+<p class="section-title">🎓 مدارک و افتخارات</p>
 <div class="certificates">
-<div class="cert">✅ مدرک برنامه‌نویسی پایتون</div>
-<div class="cert learning">📚 در حال یادگیری: جاوااسکریپت پیشرفته</div>
-<div class="cert learning">📚 در حال یادگیری: طراحی وب حرفه‌ای</div>
-<div class="cert learning">📚 در حال یادگیری: امنیت شبکه</div>
+<div class="cert">✅ مدرک بین‌المللی برنامه‌نویسی پایتون</div>
+<div class="cert">✅ مدرک برنامه‌نویسی جاوااسکریپت پیشرفته</div>
+<div class="cert">✅ مدرک طراحی وب (HTML و CSS)</div>
+<div class="cert">✅ مدرک شبکه و امنیت اطلاعات</div>
+<div class="cert">✅ مدرک ICDL (مهارت‌های هفت‌گانه)</div>
+<div class="cert learning">📚 در حال یادگیری: هک اخلاقی و تست نفوذ (TryHackMe)</div>
+<div class="cert learning">📚 در حال یادگیری: فریم‌ورک‌های React و Node.js</div>
 </div>
 
 <p class="section-title">📱 من رو دنبال کنید</p>
@@ -159,11 +175,11 @@ font-size: 12px;
 <a href="https://youtube.com/@yourusername" class="youtube" target="_blank">▶️ یوتیوب</a>
 <a href="https://wa.me/yournumber" class="whatsapp" target="_blank">💬 واتساپ</a>
 <a href="https://aparat.com/yourusername" class="aparat" target="_blank">🎬 آپارات</a>
-<a href="https://github.com/yourusername" class="github" target="_blank">💻 گیت‌هاب</a>
+<a href="https://github.com/amyrlydwity01-debug" class="github" target="_blank">💻 گیت‌هاب</a>
 </div>
 
 <footer>
-© 2026 امیرعلی دولتی
+© 2026 امیرعلی دولتی - تمامی حقوق محفوظ است
 </footer>
 </div>
 </body>
