@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amyrlydwity01-debug.github.io/amyrlydwity01-debug.github.io/sitemap.xml
