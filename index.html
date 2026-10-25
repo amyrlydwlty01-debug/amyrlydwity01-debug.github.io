@@ -35,147 +35,125 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #1a1f2e;
-    color: #fff;
+    /* ترکیب پس‌زمینه قرمز و زرد */
+    background: linear-gradient(135deg, #ff4b4b 0%, #f8b500 100%);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
-.hero {
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(180deg, #1a1f2e 0%, #2a3347 100%);
+    box-shadow: 0 20px 60px rgba(255, 75, 75, 0.4);
+    border-top: 8px solid #f8b500;
+    border-bottom: 8px solid #ff4b4b;
 }
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    background: linear-gradient(135deg, #ff4b4b, #f8b500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
     margin: 0 auto 20px;
     overflow: hidden;
     border: 4px solid #f8b500;
-    box-shadow: 0 0 30px rgba(248, 181, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-h1 { font-size: 38px; margin-bottom: 10px; color: #fff; }
-.job { color: #f8b500; font-size: 20px; margin-bottom: 25px; font-weight: bold; }
-.btn-download {
-    display: inline-block;
-    background: #f8b500;
-    color: #1a1f2e;
-    padding: 15px 35px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s;
-    margin-bottom: 30px;
-}
-.btn-download:hover { background: #ffcc00; transform: scale(1.05); }
+h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
+.job { color: #ff4b4b; font-size: 16px; margin-bottom: 20px; font-weight: bold; }
+.bio { color: #555; line-height: 1.9; margin-bottom: 25px; font-size: 15px; text-align: justify; }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-.socials a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: #2a3347;
-    border-radius: 50%;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.3s;
-}
-.socials a:hover { background: #f8b500; color: #1a1f2e; transform: translateY(-5px); }
-
-.about-section {
-    background: #fff;
-    color: #333;
-    padding: 60px 20px;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
 .section-title {
-    font-size: 28px;
-    color: #1a1f2e;
-    margin-bottom: 25px;
-    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 25px 0 15px;
     font-weight: bold;
-}
-.bio { 
-    font-size: 17px; 
-    line-height: 2; 
-    text-align: justify; 
-    color: #555;
-    margin-bottom: 40px;
+    border-bottom: 2px solid #f8b500;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
 .skill { 
-    background: #eef2ff; 
-    padding: 10px 20px; 
+    background: #fff9e6; 
+    padding: 8px 16px; 
     border-radius: 20px; 
-    font-size: 15px; 
-    color: #1a1f2e; 
+    font-size: 14px; 
+    color: #d18e00; 
     font-weight: bold;
     transition: 0.3s;
-    border: 1px solid #d0d7ff;
+    border: 1px solid #fceabb;
 }
-.skill:hover { background: #f8b500; color: #fff; transform: translateY(-3px); }
+.skill:hover { background: #f8b500; color: #fff; transform: translateY(-2px); }
 
-.certificates { display: flex; flex-direction: column; gap: 15px; }
+.certificates { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
 .cert { 
-    background: #f8f9fa; 
-    padding: 18px 20px; 
+    background: #fff9e6; 
+    padding: 15px 18px; 
     border-radius: 12px; 
-    font-size: 16px; 
+    font-size: 15px; 
     color: #333; 
     text-align: right; 
     border-right: 6px solid #f8b500; 
     font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
-.cert:hover { transform: translateX(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.cert:hover { transform: translateX(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
 .cert.learning { 
-    border-right-color: #ff8800; 
-    background: #fff3cd;
+    border-right-color: #ff4b4b; 
+    background: #ffe6e6;
 }
 
-footer { text-align: center; padding: 30px; color: #888; font-size: 14px; background: #1a1f2e; }
+.socials { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
+.socials a { 
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+    padding: 12px 18px; 
+    border-radius: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: bold; 
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.socials a:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.telegram { background: #0088cc; }
+.youtube { background: #ff0000; }
+.whatsapp { background: #25D366; }
+.aparat { background: #ED145B; }
+.github { background: #333; }
+
+footer { margin-top: 30px; color: #999; font-size: 13px; border-top: 1px solid #fceabb; padding-top: 15px; }
 </style>
 </head>
 <body>
-
-<div class="hero">
+<div class="card">
 <div class="avatar">
-<img src="hattps://amyrlydwl01-debug.github.io/amyrlydwl01-debug.github.io/amirali-image.webp" alt="امیرعلی دولتی">
+<img src="https://amyrlydwlty01-debug.github.io/amyrldwlty01-debug.github.io/amirali-image.webp" alt="امیرعلی دولتی">
 </div>
 <h1>امیرعلی دولتی</h1>
 <p class="job">برنامه‌نویس و توسعه‌دهنده وب</p>
 
-<a href="#" class="btn-download">📥 دانلود رزومه</a>
-
-<div class="socials">
-<a href="https://github.com/amyrlydwity01-debug" target="_blank">💻</a>
-<a href="https://t.me/yourusername" target="_blank">✈️</a>
-<a href="https://instagram.com/yourusername" target="_blank">📷</a>
-<a href="https://wa.me/yournumber" target="_blank">💬</a>
-</div>
-</div>
-
-<div class="about-section">
-<div class="container">
-<p class="section-title">👋 درباره من</p>
 <p class="bio">
-سلام! من امیرعلی دولتی هستم، اهل ده حسن. از همون بچگی عاشق دنیای کامپیوتر و تکنولوژی بودم و حالا با علاقه و اشتیاق، مسیر برنامه‌نویسی و ساخت وب‌سایت‌های مدرن رو دنبال می‌کنم. هدف من اینه که با یادگیری مداوم، بتونم پروژه‌های خلاقانه و کاربردی بسازم و هر روز بهتر از دیروز باشم.
+سلام! من امیرعلی دولتی هستم، اهل ده حسن. از همون بچگی عاشق دنیای کامپیوتر و تکنولوژی بودم و حالا با علاقه و اشتیاق، مسیر برنامه‌نویسی و ساخت وب‌سایت‌های مدرن رو دنبال می‌کنم. هدف من اینه که با یادگیری مداوم، بتونم پروژه‌های خلاقانه و کاربردی بسازم و هر روز بهتر از دیروز باشم. اینجا می‌تونید با مهارت‌ها، مدارک و مسیر پیشرفتم بیشتر آشنا بشید.
 </p>
 
 <p class="section-title">🛠️ مهارت‌های من</p>
@@ -199,12 +177,20 @@ footer { text-align: center; padding: 30px; color: #888; font-size: 14px; backgr
 <div class="cert learning">📚 در حال یادگیری: امنیت شبکه</div>
 <div class="cert learning">📚 در حال یادگیری: طراحی وب حرفه‌ای</div>
 </div>
-</div>
+
+<p class="section-title">📱 من رو دنبال کنید</p>
+<div class="socials">
+<a href="https://instagram.com/yourusername" class="instagram" target="_blank">📷 اینستاگرام</a>
+<a href="https://t.me/yourusername" class="telegram" target="_blank">✈️ تلگرام</a>
+<a href="https://youtube.com/@yourusername" class="youtube" target="_blank">▶️ یوتیوب</a>
+<a href="https://wa.me/yournumber" class="whatsapp" target="_blank">💬 واتساپ</a>
+<a href="https://aparat.com/yourusername" class="aparat" target="_blank">🎬 آپارات</a>
+<a href="https://github.com/amyrlydwity01-debug" class="github" target="_blank">💻 گیت‌هاب</a>
 </div>
 
 <footer>
 © 2026 امیرعلی دولتی - تمامی حقوق محفوظ است
 </footer>
-
+</div>
 </body>
-    </html>
+  </html>
